@@ -1,0 +1,4648 @@
+{
+  "dataset": "/Users/mac/Documents/Bacancy POD/imac-environmental-rag/eval/provisional_questions.json",
+  "mode": "retrieval",
+  "run_at": "2026-10-20 15:33:48",
+  "index_built_at": "2026-10-20 15:33:35",
+  "judging": "deterministic key-fact checks (must_include groups, expected numbers, status); not human-graded",
+  "summary": {
+    "overall": {
+      "n": 47,
+      "evidence_recall": 1.0,
+      "phrase_recall": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 0.869,
+      "type_coverage": 0.975
+    },
+    "by_category": {
+      "text": {
+        "n": 8,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.875,
+        "type_coverage": 1.0
+      },
+      "table": {
+        "n": 7,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.786,
+        "type_coverage": 1.0
+      },
+      "chart": {
+        "n": 6,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.833,
+        "type_coverage": 0.917
+      },
+      "footnote": {
+        "n": 8,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.906,
+        "type_coverage": 1.0
+      },
+      "multi_page": {
+        "n": 5,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.9,
+        "type_coverage": 0.9
+      },
+      "calculation": {
+        "n": 6,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.917,
+        "type_coverage": 1.0
+      },
+      "unanswerable": {
+        "n": 7,
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "T01",
+      "category": "text",
+      "question": "When was the iMac covered by this report introduced?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "category": "text",
+      "question": "How much less energy does iMac use than the ENERGY STAR requirement?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-16",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-15",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "category": "text",
+      "question": "In what share of the countries where Apple sells products does it provide or participate in product take-back and recycling collection programs?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-13",
+          "content_type": "text",
+          "pages": [
+            10
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-14",
+          "content_type": "text",
+          "pages": [
+            10
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-19",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-16",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-12",
+          "content_type": "footnote",
+          "pages": [
+            13,
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-14",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "category": "text",
+      "question": "Which ISO standards are Apple's product carbon footprint calculations performed in accordance with?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-15",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "category": "text",
+      "question": "How many components in iMac use at least 50 percent recycled plastic?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-14",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-16",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-10",
+          "content_type": "text",
+          "pages": [
+            7
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-12",
+          "content_type": "footnote",
+          "pages": [
+            13,
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "category": "text",
+      "question": "Over what period does Apple assume first owners use macOS devices when modelling product-use emissions?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-16",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-20",
+          "content_type": "text",
+          "pages": [
+            13,
+            14,
+            15
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "category": "text",
+      "question": "What percentage of the materials in iMac are covered by Apple's Regulated Substances Specification?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-12",
+          "content_type": "footnote",
+          "pages": [
+            13,
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "category": "text",
+      "question": "What share of the makeup of iMac devices, by mass, does Apple identify?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-20",
+          "content_type": "text",
+          "pages": [
+            13,
+            14,
+            15
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "B01",
+      "category": "table",
+      "question": "What is iMac's power consumption in sleep mode at 115V?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "B02",
+      "category": "table",
+      "question": "What is the power adapter efficiency at 230V?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-16",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-14",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-12",
+          "content_type": "footnote",
+          "pages": [
+            13,
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "B03",
+      "category": "table",
+      "question": "What is iMac's idle power consumption with the display on at 100V?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "B04",
+      "category": "table",
+      "question": "What share of the life cycle emissions of iMac (two ports) 256GB comes from product use?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "B05",
+      "category": "table",
+      "question": "What are Apple's scope 2 emissions from utility-purchased electricity for iMac (two ports) 256GB?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "B06",
+      "category": "table",
+      "question": "What is the carbon footprint of iMac (four ports) 512GB?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-14",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "category": "table",
+      "question": "What share of iMac's life cycle carbon emissions comes from end-of-life processing?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "C01",
+      "category": "chart",
+      "question": "In the 'Progress toward carbon neutral' chart, what are the baseline emissions and the final iMac emissions?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-8",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-11",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "category": "chart",
+      "question": "How large are the emissions reductions shown in the iMac carbon emissions chart?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-8",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-11",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "category": "chart",
+      "question": "Which emissions-reduction categories are labelled in the progress toward carbon neutral chart?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-11",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-8",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-17",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "category": "chart",
+      "question": "Why are renewable energy emissions not visible on the iMac carbon emissions chart?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 0.5
+      },
+      "evidence": [
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-11",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "category": "chart",
+      "question": "According to the packaging infographic, what percentage of the packaging is fiber-based and how much recycled content does the fiber packaging contain?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "figure-2",
+          "content_type": "figure",
+          "pages": [
+            8
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-10",
+          "content_type": "text",
+          "pages": [
+            7
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-17",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "category": "chart",
+      "question": "What values does the 'Energy consumption of ENERGY STAR-rated products' chart show?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-11",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-8",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F01",
+      "category": "footnote",
+      "question": "Does iMac's 'more than 15 percent recycled content' figure include packaging?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.25,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-10",
+          "content_type": "text",
+          "pages": [
+            7
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "category": "footnote",
+      "question": "Is every Apple product completely free of PVC and phthalates?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-15",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-12",
+          "content_type": "footnote",
+          "pages": [
+            13,
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "category": "footnote",
+      "question": "Which iMac configuration does the recycled copper in the thermal module apply to?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-14",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-12",
+          "content_type": "footnote",
+          "pages": [
+            13,
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "category": "footnote",
+      "question": "What is excluded from Apple's calculations of plastic content and packaging weight?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-10",
+          "content_type": "text",
+          "pages": [
+            7
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "figure-2",
+          "content_type": "figure",
+          "pages": [
+            8
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-17",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F05",
+      "category": "footnote",
+      "question": "What does the Zero Waste to Landfill claim for iMac final assembly supplier sites require, and who verifies it?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-16",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-15",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "category": "footnote",
+      "question": "For which recycled materials does Apple currently quantify carbon savings?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-8",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-17",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-15",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F07",
+      "category": "footnote",
+      "question": "What EPEAT rating did iMac achieve, and in which countries?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-6",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-16",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "F08",
+      "category": "footnote",
+      "question": "Which iMac configuration is the 346 kg CO2e carbon footprint based on?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-15",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "M01",
+      "category": "multi_page",
+      "question": "By how much has Apple reduced iMac emissions, and what business-as-usual scenario are the reductions measured against?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-8",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-11",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "category": "multi_page",
+      "question": "Which materials in iMac use 100 percent recycled content, and is any of these claims limited to a particular configuration?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-10",
+          "content_type": "text",
+          "pages": [
+            7
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-13",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-6",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-14",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-16",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-12",
+          "content_type": "footnote",
+          "pages": [
+            13,
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "category": "multi_page",
+      "question": "How does the recycled content of iMac's packaging compare with the recycled content of the device itself?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 0.5
+      },
+      "evidence": [
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-2",
+          "content_type": "text",
+          "pages": [
+            1,
+            2
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-10",
+          "content_type": "text",
+          "pages": [
+            7
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "category": "multi_page",
+      "question": "iMac uses 58 percent less energy than the ENERGY STAR requirement. What is that figure based on, and which power adapter was iMac tested with?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "category": "multi_page",
+      "question": "What share of iMac manufacturing electricity comes from low-carbon sources, and how is that percentage estimated?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-17",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-16",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-15",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "category": "calculation",
+      "question": "How much higher is the carbon footprint of iMac (four ports) 512GB than that of iMac (two ports) 256GB?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "category": "calculation",
+      "question": "By what percentage do emissions fall from the baseline to the final iMac emissions shown in the carbon neutral progress chart?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-9",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-8",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-11",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "category": "calculation",
+      "question": "At 230V, how much more power does iMac draw in sleep mode than when it is off?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-12",
+          "content_type": "text",
+          "pages": [
+            9,
+            10
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-16",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "category": "calculation",
+      "question": "Approximately how many kg CO2e of the life cycle emissions of iMac (two ports) 256GB are attributable to production?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "category": "calculation",
+      "question": "What is the range of iMac's idle (display on) power consumption across the tested voltages?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "N06",
+      "category": "calculation",
+      "question": "What is the power adapter's no-load power consumption at 100V, expressed in milliwatts?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "evidence": [
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-16",
+          "content_type": "text",
+          "pages": [
+            11
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "U01",
+      "category": "unanswerable",
+      "question": "What is the price of the iMac?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "evidence": [
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "U02",
+      "category": "unanswerable",
+      "question": "How much does the iMac weigh?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "evidence": [
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-12",
+          "content_type": "text",
+          "pages": [
+            9,
+            10
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "U03",
+      "category": "unanswerable",
+      "question": "What was the carbon footprint of the 2023 iMac with the M3 chip?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "U04",
+      "category": "unanswerable",
+      "question": "What is iMac's typical annual energy consumption in kWh?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "evidence": [
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "figure-3",
+          "content_type": "figure",
+          "pages": [
+            9
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-2",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "chunk-9",
+          "content_type": "text",
+          "pages": [
+            6
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "U05",
+      "category": "unanswerable",
+      "question": "How much water is used to manufacture an iMac?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "evidence": [
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-4",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-10",
+          "content_type": "text",
+          "pages": [
+            7
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-5",
+          "content_type": "text",
+          "pages": [
+            5
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "chunk-1",
+          "content_type": "text",
+          "pages": [
+            1
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-3",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-1",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "U06",
+      "category": "unanswerable",
+      "question": "What is the carbon footprint of iMac (four ports) with 1TB of storage?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "evidence": [
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "table-1",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "fn-10",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "chunk-19",
+          "content_type": "text",
+          "pages": [
+            12
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "figure-1",
+          "content_type": "figure",
+          "pages": [
+            2,
+            3
+          ],
+          "rank": null
+        }
+      ]
+    },
+    {
+      "id": "U07",
+      "category": "unanswerable",
+      "question": "What display resolution does the iMac have?",
+      "status": null,
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "evidence": [
+        {
+          "item_id": "table-3",
+          "content_type": "table",
+          "pages": [
+            14
+          ],
+          "rank": 1
+        },
+        {
+          "item_id": "fn-18",
+          "content_type": "footnote",
+          "pages": [
+            14
+          ],
+          "rank": 2
+        },
+        {
+          "item_id": "chunk-11",
+          "content_type": "text",
+          "pages": [
+            8,
+            9
+          ],
+          "rank": 3
+        },
+        {
+          "item_id": "table-2",
+          "content_type": "table",
+          "pages": [
+            12
+          ],
+          "rank": 4
+        },
+        {
+          "item_id": "chunk-7",
+          "content_type": "text",
+          "pages": [
+            5,
+            6
+          ],
+          "rank": 5
+        },
+        {
+          "item_id": "chunk-3",
+          "content_type": "text",
+          "pages": [
+            2
+          ],
+          "rank": 6
+        },
+        {
+          "item_id": "fn-7",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        },
+        {
+          "item_id": "fn-5",
+          "content_type": "footnote",
+          "pages": [
+            13
+          ],
+          "rank": null
+        }
+      ]
+    }
+  ]
+}

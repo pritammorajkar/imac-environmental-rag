@@ -1,0 +1,5498 @@
+{
+  "dataset": "/Users/mac/Documents/Bacancy POD/imac-environmental-rag/eval/provisional_questions.json",
+  "mode": "extractive",
+  "run_at": "2026-10-20 15:51:05",
+  "index_built_at": "2026-10-20 15:45:33",
+  "judging": "deterministic key-fact checks (must_include groups, expected numbers, status); not human-graded",
+  "summary": {
+    "overall": {
+      "n": 47,
+      "evidence_recall": 1.0,
+      "phrase_recall": 1.0,
+      "hit_at_k": 1.0,
+      "mrr": 0.869,
+      "type_coverage": 0.975,
+      "accuracy": 0.596,
+      "fact_score": 0.679,
+      "citation_precision": 0.879,
+      "citation_recall": 0.787,
+      "numeric_accuracy": 0.609,
+      "answered_unanswerable": 2,
+      "wrong_abstentions": 0,
+      "answers_with_unsupported_numbers": 0,
+      "failed_calculations": 0,
+      "errors": 0
+    },
+    "by_category": {
+      "text": {
+        "n": 8,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.875,
+        "type_coverage": 1.0,
+        "accuracy": 0.875,
+        "fact_score": 0.875,
+        "citation_precision": 0.75,
+        "citation_recall": 0.875,
+        "numeric_accuracy": 1.0,
+        "answered_unanswerable": 0,
+        "wrong_abstentions": 0,
+        "answers_with_unsupported_numbers": 0,
+        "failed_calculations": 0,
+        "errors": 0
+      },
+      "table": {
+        "n": 7,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.786,
+        "type_coverage": 1.0,
+        "accuracy": 1.0,
+        "fact_score": 1.0,
+        "citation_precision": 1.0,
+        "citation_recall": 1.0,
+        "numeric_accuracy": 1.0,
+        "answered_unanswerable": 0,
+        "wrong_abstentions": 0,
+        "answers_with_unsupported_numbers": 0,
+        "failed_calculations": 0,
+        "errors": 0
+      },
+      "chart": {
+        "n": 6,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.833,
+        "type_coverage": 0.917,
+        "accuracy": 0.333,
+        "fact_score": 0.472,
+        "citation_precision": 1.0,
+        "citation_recall": 0.667,
+        "numeric_accuracy": 0.333,
+        "answered_unanswerable": 0,
+        "wrong_abstentions": 0,
+        "answers_with_unsupported_numbers": 0,
+        "failed_calculations": 0,
+        "errors": 0
+      },
+      "footnote": {
+        "n": 8,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.906,
+        "type_coverage": 1.0,
+        "accuracy": 0.625,
+        "fact_score": 0.75,
+        "citation_precision": 0.938,
+        "citation_recall": 0.75,
+        "numeric_accuracy": null,
+        "answered_unanswerable": 0,
+        "wrong_abstentions": 0,
+        "answers_with_unsupported_numbers": 0,
+        "failed_calculations": 0,
+        "errors": 0
+      },
+      "multi_page": {
+        "n": 5,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.9,
+        "type_coverage": 0.9,
+        "accuracy": 0.0,
+        "fact_score": 0.467,
+        "citation_precision": 0.9,
+        "citation_recall": 0.5,
+        "numeric_accuracy": 0.25,
+        "answered_unanswerable": 0,
+        "wrong_abstentions": 0,
+        "answers_with_unsupported_numbers": 0,
+        "failed_calculations": 0,
+        "errors": 0
+      },
+      "calculation": {
+        "n": 6,
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "hit_at_k": 1.0,
+        "mrr": 0.917,
+        "type_coverage": 1.0,
+        "accuracy": 0.333,
+        "fact_score": 0.333,
+        "citation_precision": 0.695,
+        "citation_recall": 0.833,
+        "numeric_accuracy": 0.333,
+        "answered_unanswerable": 0,
+        "wrong_abstentions": 0,
+        "answers_with_unsupported_numbers": 0,
+        "failed_calculations": 0,
+        "errors": 0
+      },
+      "unanswerable": {
+        "n": 7,
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null,
+        "accuracy": 0.714,
+        "fact_score": null,
+        "citation_precision": null,
+        "citation_recall": null,
+        "numeric_accuracy": null,
+        "answered_unanswerable": 2,
+        "wrong_abstentions": 0,
+        "answers_with_unsupported_numbers": 0,
+        "failed_calculations": 0,
+        "errors": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "T01",
+      "category": "text",
+      "question": "When was the iMac covered by this report introduced?",
+      "expected_answer": "October 28, 2024.",
+      "status": "answered",
+      "answer": "Date introduced October 28, 2024 [E1] And 100 percent of the materials in iMac are covered by our Regulated Substances Specification. [E3]",
+      "cited_pages": [
+        1,
+        13
+      ],
+      "content_types_used": [
+        "footnote",
+        "text"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.5,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.02,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E5",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E6",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E7",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-4",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E10",
+          "fn-1",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "fn-3",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "T02",
+      "category": "text",
+      "question": "How much less energy does iMac use than the ENERGY STAR requirement?",
+      "expected_answer": "58 percent less energy than the ENERGY STAR requirement (endnote 18 gives the basis).",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: iMac uses 58 percent less energy than the requirement for ENERGY STAR.[^18] [E1] Apple devices consistently rank among the high-performing products rated by ENERGY STAR, which sets specifications that typically reflect the 25 percent most energy-efficient devices on the market. iMac consumes 58 percent less energy than the requirement for [E1]",
+      "cited_pages": [
+        8,
+        9
+      ],
+      "content_types_used": [
+        "text"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E7",
+          "fn-16",
+          [
+            14
+          ]
+        ],
+        [
+          "E8",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E11",
+          "fn-15",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "T03",
+      "category": "text",
+      "question": "In what share of the countries where Apple sells products does it provide or participate in product take-back and recycling collection programs?",
+      "expected_answer": "99 percent of the countries where Apple sells products.",
+      "status": "answered",
+      "answer": "We provide or participate in product take-back and recycling collection programs in 99 percent of the countries where we sell products. [E1] If your device isn’t eligible for credit, we’ll recycle it for free through product take-back and recycling collection programs.[^19] [E1]",
+      "cited_pages": [
+        10
+      ],
+      "content_types_used": [
+        "text"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-13",
+          [
+            10
+          ]
+        ],
+        [
+          "E2",
+          "chunk-14",
+          [
+            10
+          ]
+        ],
+        [
+          "E3",
+          "fn-19",
+          [
+            14
+          ]
+        ],
+        [
+          "E4",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E5",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E6",
+          "chunk-16",
+          [
+            11
+          ]
+        ],
+        [
+          "E7",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E8",
+          "fn-12",
+          [
+            13,
+            14
+          ]
+        ],
+        [
+          "E9",
+          "fn-14",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "T04",
+      "category": "text",
+      "question": "Which ISO standards are Apple's product carbon footprint calculations performed in accordance with?",
+      "expected_answer": "ISO 14040, ISO 14044 and ISO 14067.",
+      "status": "answered",
+      "answer": "Total product footprint: 346 kg CO2e [E3]",
+      "cited_pages": [
+        12
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          [
+            "14040"
+          ],
+          [
+            "14044"
+          ],
+          [
+            "14067"
+          ]
+        ],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E2",
+          "chunk-15",
+          [
+            11
+          ]
+        ],
+        [
+          "E3",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E4",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E6",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E7",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "T05",
+      "category": "text",
+      "question": "How many components in iMac use at least 50 percent recycled plastic?",
+      "expected_answer": "13 components.",
+      "status": "answered",
+      "answer": "We use at least 50 percent recycled plastic in 13 components. [E2] We also use 100 percent recycled copper in multiple thermal module components.[^14] [E1]",
+      "cited_pages": [
+        5,
+        14
+      ],
+      "content_types_used": [
+        "footnote",
+        "text"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.5,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-14",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E3",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E4",
+          "chunk-5",
+          [
+            5
+          ]
+        ],
+        [
+          "E5",
+          "fn-16",
+          [
+            14
+          ]
+        ],
+        [
+          "E6",
+          "chunk-10",
+          [
+            7
+          ]
+        ],
+        [
+          "E7",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E9",
+          "fn-3",
+          [
+            13
+          ]
+        ],
+        [
+          "E10",
+          "fn-4",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E12",
+          "fn-12",
+          [
+            13,
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "T06",
+      "category": "text",
+      "question": "Over what period does Apple assume first owners use macOS devices when modelling product-use emissions?",
+      "expected_answer": "A four-year period (three years for iOS and watchOS devices).",
+      "status": "answered",
+      "answer": "• Use: Apple assumes a three-year period for power use by first owners for iOS and watchOS devices and a four-year period for macOS, iPadOS, and tvOS devices. [E1] Endnote 7: Carbon reductions are calculated against a product-specific business-as-usual scenario as modeled by Apple: 1) No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid (based on regional emissions factors). 2) Apple’s carbon intensity of key materials as of 2015 (our baseline year for our 2030 product carbon neutrality goal). [E2]",
+      "cited_pages": [
+        11,
+        13
+      ],
+      "content_types_used": [
+        "footnote",
+        "text"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.5,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-16",
+          [
+            11
+          ]
+        ],
+        [
+          "E2",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E6",
+          "chunk-20",
+          [
+            13,
+            14,
+            15
+          ]
+        ],
+        [
+          "E7",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E8",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E9",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E10",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E11",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "T07",
+      "category": "text",
+      "question": "What percentage of the materials in iMac are covered by Apple's Regulated Substances Specification?",
+      "expected_answer": "100 percent.",
+      "status": "answered",
+      "answer": "And 100 percent of the materials in iMac are covered by our Regulated Substances Specification. [E1] Endnote 5: Apple’s Regulated Substances Specification describes Apple’s restrictions on the use of certain chemical substances in materials in Apple products, accessories, manufacturing processes, and packaging used for shipping products to Apple’s end customers. [E1]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E3",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E5",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E6",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E8",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E11",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E12",
+          "fn-12",
+          [
+            13,
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "T08",
+      "category": "text",
+      "question": "What share of the makeup of iMac devices, by mass, does Apple identify?",
+      "expected_answer": "Over 80 percent by mass.",
+      "status": "answered",
+      "answer": "identify the makeup of over 80 percent by mass of iMac devices. [E1] Apple devices consistently rank among the high-performing products rated by ENERGY STAR, which sets specifications that typically reflect the 25 percent most energy-efficient devices on the market. iMac consumes 58 percent less energy than the requirement for [E2]",
+      "cited_pages": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "content_types_used": [
+        "text"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.5,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E2",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E3",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E4",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E5",
+          "chunk-20",
+          [
+            13,
+            14,
+            15
+          ]
+        ],
+        [
+          "E6",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E9",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E10",
+          "table-1",
+          [
+            12
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "B01",
+      "category": "table",
+      "question": "What is iMac's power consumption in sleep mode at 115V?",
+      "expected_answer": "0.57W.",
+      "status": "answered",
+      "answer": "Sleep — 115V: 0.57W [E1]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E5",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E6",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "chunk-1",
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "B02",
+      "category": "table",
+      "question": "What is the power adapter efficiency at 230V?",
+      "expected_answer": "91.9%.",
+      "status": "answered",
+      "answer": "Power adapter efficiency — 230V: 91.9% [E1]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-16",
+          [
+            11
+          ]
+        ],
+        [
+          "E6",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E7",
+          "fn-14",
+          [
+            14
+          ]
+        ],
+        [
+          "E8",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E9",
+          "fn-12",
+          [
+            13,
+            14
+          ]
+        ],
+        [
+          "E10",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E11",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "B03",
+      "category": "table",
+      "question": "What is iMac's idle power consumption with the display on at 100V?",
+      "expected_answer": "20.5W.",
+      "status": "answered",
+      "answer": "Idle—Display On — 100V: 20.5W [E1]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E5",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E6",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E9",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "B04",
+      "category": "table",
+      "question": "What share of the life cycle emissions of iMac (two ports) 256GB comes from product use?",
+      "expected_answer": "45%.",
+      "status": "answered",
+      "answer": "Product use: 45% [E2]",
+      "cited_pages": [
+        12
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E7",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E8",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E9",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E10",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "B05",
+      "category": "table",
+      "question": "What are Apple's scope 2 emissions from utility-purchased electricity for iMac (two ports) 256GB?",
+      "expected_answer": "0 kg CO2e.",
+      "status": "answered",
+      "answer": "Apple emissions from utility-purchased electricity (scope 2): 0 kg CO2e [E2]",
+      "cited_pages": [
+        12
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E7",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E8",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "B06",
+      "category": "table",
+      "question": "What is the carbon footprint of iMac (four ports) 512GB?",
+      "expected_answer": "391 kg CO2e.",
+      "status": "answered",
+      "answer": "iMac (four ports) 512GB: 391 kg CO2e [E1]",
+      "cited_pages": [
+        12
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E2",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E5",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-14",
+          [
+            14
+          ]
+        ],
+        [
+          "E7",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E8",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E9",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "B07",
+      "category": "table",
+      "question": "What share of iMac's life cycle carbon emissions comes from end-of-life processing?",
+      "expected_answer": "Less than 1% (<1%).",
+      "status": "answered",
+      "answer": "End-of-life processing: <1% [E2]",
+      "cited_pages": [
+        12
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E4",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E7",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E8",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E11",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C01",
+      "category": "chart",
+      "question": "In the 'Progress toward carbon neutral' chart, what are the baseline emissions and the final iMac emissions?",
+      "expected_answer": "Baseline emissions 445 kg; iMac emissions 346 kg (after -99 kg of reductions).",
+      "status": "answered",
+      "answer": "Endnote 7: Carbon reductions are calculated against a product-specific business-as-usual scenario as modeled by Apple: 1) No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid (based on regional emissions factors). 2) Apple’s carbon intensity of key materials as of 2015 (our baseline year for our 2030 product carbon neutrality goal). [E3] Carbon intensity of materials reflects use of recycled content and production technology. 3) Apple’s average mix of transportation modes (air, rail, ocean, ground) by product line across three years (fiscal years 2017 to 2019) to best capture the baseline transportation emissions of our products. [E3]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          445,
+          346
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E2",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E3",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E6",
+          "fn-8",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E8",
+          "fn-11",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "fn-9",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C02",
+      "category": "chart",
+      "question": "How large are the emissions reductions shown in the iMac carbon emissions chart?",
+      "expected_answer": "-99 kg.",
+      "status": "answered",
+      "answer": "Endnote 7: Carbon reductions are calculated against a product-specific business-as-usual scenario as modeled by Apple: 1) No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid (based on regional emissions factors). 2) Apple’s carbon intensity of key materials as of 2015 (our baseline year for our 2030 product carbon neutrality goal). [E1] Carbon intensity of materials reflects use of recycled content and production technology. 3) Apple’s average mix of transportation modes (air, rail, ocean, ground) by product line across three years (fiscal years 2017 to 2019) to best capture the baseline transportation emissions of our products. [E1]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          99
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E3",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E6",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-8",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-9",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "fn-11",
+          [
+            13
+          ]
+        ],
+        [
+          "E10",
+          "fn-18",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C03",
+      "category": "chart",
+      "question": "Which emissions-reduction categories are labelled in the progress toward carbon neutral chart?",
+      "expected_answer": "Recycled and low-carbon materials, low-carbon electricity (for manufacturing), electricity for product use, and non-air shipping.",
+      "status": "answered",
+      "answer": "445 kg — Baseline emissions[^7]; –99 kg — Emissions reductions; 346 kg — iMac emissions[^10]. [E1] The low-carbon electricity solutions that suppliers have already implemented to date have reduced product emissions by 5 percent. [E2]",
+      "cited_pages": [
+        2,
+        3
+      ],
+      "content_types_used": [
+        "figure",
+        "text"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.333,
+        "missing_facts": [
+          [
+            "recycled and low-carbon materials",
+            "recycled and low carbon materials"
+          ],
+          [
+            "non-air shipping",
+            "non air shipping"
+          ]
+        ],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E2",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E3",
+          "fn-11",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "fn-8",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-17",
+          [
+            11
+          ]
+        ],
+        [
+          "E6",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-9",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E9",
+          "fn-10",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C04",
+      "category": "chart",
+      "question": "Why are renewable energy emissions not visible on the iMac carbon emissions chart?",
+      "expected_answer": "They are too small to be visible on the chart (endnote 11).",
+      "status": "answered",
+      "answer": "Endnote 11: Renewable energy emissions are too small to be visible on the chart. [E3] Endnote 2: We estimate the percentage of electricity-related emissions in our manufacturing that is sourced from low-carbon electricity by attributing to our carbon model low-carbon energy procured by our suppliers in the prior fiscal year, based on the supplier manufacturing allocations at time of product launch. [E2]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 0.5
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E2",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E3",
+          "fn-11",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E6",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E7",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E10",
+          "fn-9",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E12",
+          "table-3",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C05",
+      "category": "chart",
+      "question": "According to the packaging infographic, what percentage of the packaging is fiber-based and how much recycled content does the fiber packaging contain?",
+      "expected_answer": "100% fiber-based; 76% recycled content in fiber packaging.",
+      "status": "answered",
+      "answer": "100% — of the packaging[^3] is fiber-based, due to our work to remove plastic in packaging; 76% — recycled content in fiber packaging; 100% — of the virgin wood fiber in the packaging is responsibly sourced[^17]. [E1] iMac contains 76 percent recycled content, and we have protected or established enough responsibly managed forests to cover all the new wood fiber we use in our packaging.[^4] [E2]",
+      "cited_pages": [
+        7,
+        8
+      ],
+      "content_types_used": [
+        "figure",
+        "text"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "figure-2",
+          [
+            8
+          ]
+        ],
+        [
+          "E2",
+          "chunk-10",
+          [
+            7
+          ]
+        ],
+        [
+          "E3",
+          "fn-3",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "fn-4",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "fn-1",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-17",
+          [
+            14
+          ]
+        ],
+        [
+          "E7",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E8",
+          "chunk-5",
+          [
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C06",
+      "category": "chart",
+      "question": "What values does the 'Energy consumption of ENERGY STAR-rated products' chart show?",
+      "expected_answer": "The chart's graphics and values are not present in this PDF (only its title remains); the report states iMac consumes 58 percent less energy than the ENERGY STAR requirement.",
+      "status": "answered",
+      "answer": "Apple devices consistently rank among the high-performing products rated by ENERGY STAR, which sets specifications that typically reflect the 25 percent most energy-efficient devices on the market. iMac consumes 58 percent less energy than the requirement for [E3] Endnote 18: Energy consumption and energy efficiency values are based on the ENERGY STAR Program Requirements for Computers, including the max energy allowance for iMac. [E2]",
+      "cited_pages": [
+        8,
+        9,
+        14
+      ],
+      "content_types_used": [
+        "footnote",
+        "text"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.5,
+        "missing_facts": [
+          [
+            "not present",
+            "not available",
+            "missing",
+            "not included",
+            "not provided",
+            "does not contain",
+            "doesn't contain",
+            "cannot be",
+            "not contain",
+            "no values",
+            "not shown"
+          ]
+        ],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E5",
+          "fn-11",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-9",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E10",
+          "fn-8",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E12",
+          "chunk-1",
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F01",
+      "category": "footnote",
+      "question": "Does iMac's 'more than 15 percent recycled content' figure include packaging?",
+      "expected_answer": "No. Per endnote 1 it is the mass of certified recycled material relative to the device's overall mass, not including packaging or in-box accessories.",
+      "status": "answered",
+      "answer": "iMac contains 76 percent recycled content, and we have protected or established enough responsibly managed forests to cover all the new wood fiber we use in our packaging.[^4] [E2] This device contains more than 15 percent recycled content, including 100 percent recycled aluminum in the stand, reducing total product emissions by about 13 percent. [E3]",
+      "cited_pages": [
+        2,
+        7
+      ],
+      "content_types_used": [
+        "text"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          [
+            "re:\\bno\\b",
+            "not include",
+            "does not",
+            "excludes",
+            "excluding",
+            "not including"
+          ],
+          [
+            "accessories"
+          ]
+        ],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.25,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.5,
+        "citation_recall": 0.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-5",
+          [
+            5
+          ]
+        ],
+        [
+          "E2",
+          "chunk-10",
+          [
+            7
+          ]
+        ],
+        [
+          "E3",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E4",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E6",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E7",
+          "fn-1",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-4",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E10",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "fn-3",
+          [
+            13
+          ]
+        ],
+        [
+          "E12",
+          "fn-2",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F02",
+      "category": "footnote",
+      "question": "Is every Apple product completely free of PVC and phthalates?",
+      "expected_answer": "No. AC power cords in India, Thailand (2-prong) and South Korea are excepted, pending government approval of the replacement (endnote 5).",
+      "status": "answered",
+      "answer": "Every Apple product is free of PVC and phthalates except for AC power cords in India, Thailand (for 2-prong AC power cords), and South Korea, where we continue to seek government approval for our PVC and phthalates replacement. [E1] iMac is free of harmful substances like brominated flame retardants, PVC, phthalates, arsenic in the glass, and mercury.[^5] [E1]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.04,
+      "retrieved": [
+        [
+          "E1",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E3",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E4",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E5",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E6",
+          "chunk-15",
+          [
+            11
+          ]
+        ],
+        [
+          "E7",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-12",
+          [
+            13,
+            14
+          ]
+        ],
+        [
+          "E9",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E10",
+          "fn-1",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "fn-3",
+          [
+            13
+          ]
+        ],
+        [
+          "E12",
+          "fn-4",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F03",
+      "category": "footnote",
+      "question": "Which iMac configuration does the recycled copper in the thermal module apply to?",
+      "expected_answer": "iMac (four ports) only (endnote 14).",
+      "status": "answered",
+      "answer": "Endnote 14: Recycled copper in the thermal module applies to iMac (four ports) only. [E1] We also use 100 percent recycled copper in multiple thermal module components.[^14] [E1]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-14",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E3",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E4",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E5",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E6",
+          "chunk-5",
+          [
+            5
+          ]
+        ],
+        [
+          "E7",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E9",
+          "fn-1",
+          [
+            13
+          ]
+        ],
+        [
+          "E10",
+          "fn-12",
+          [
+            13,
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F04",
+      "category": "footnote",
+      "question": "What is excluded from Apple's calculations of plastic content and packaging weight?",
+      "expected_answer": "Adhesives, inks and coatings (endnote 3).",
+      "status": "answered",
+      "answer": "Adhesives, inks, and coatings are excluded from our calculations of plastic content and packaging weight. [E1] 100% — of the packaging[^3] is fiber-based, due to our work to remove plastic in packaging; 76% — recycled content in fiber packaging; 100% — of the virgin wood fiber in the packaging is responsibly sourced[^17]. [E3]",
+      "cited_pages": [
+        8,
+        13
+      ],
+      "content_types_used": [
+        "figure",
+        "footnote"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-3",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "chunk-10",
+          [
+            7
+          ]
+        ],
+        [
+          "E3",
+          "figure-2",
+          [
+            8
+          ]
+        ],
+        [
+          "E4",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E6",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E8",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E11",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E12",
+          "fn-17",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F05",
+      "category": "footnote",
+      "question": "What does the Zero Waste to Landfill claim for iMac final assembly supplier sites require, and who verifies it?",
+      "expected_answer": "Established final assembly sites (Apple suppliers for more than one year) are third-party verified as Zero Waste by UL LLC (UL 2799); UL requires at least 90 percent diversion through methods other than waste to energy (endnote 16).",
+      "status": "answered",
+      "answer": "Endnote 16: All established final assembly supplier sites—those that have been Apple suppliers for more than one year— for iMac are third-party verified as Zero Waste by UL LLC (UL 2799 Standard). [E1] No established iMac final assembly supplier sites generate any waste [E2]",
+      "cited_pages": [
+        6,
+        14
+      ],
+      "content_types_used": [
+        "footnote",
+        "text"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.5,
+        "missing_facts": [
+          [
+            "re:\\b90"
+          ]
+        ],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-16",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E3",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E4",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E5",
+          "chunk-5",
+          [
+            5
+          ]
+        ],
+        [
+          "E6",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E9",
+          "fn-15",
+          [
+            14
+          ]
+        ],
+        [
+          "E10",
+          "fn-1",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F06",
+      "category": "footnote",
+      "question": "For which recycled materials does Apple currently quantify carbon savings?",
+      "expected_answer": "Recycled aluminum, titanium, stainless steel, lithium, cobalt, tungsten and gold in select parts for select products (endnote 8).",
+      "status": "answered",
+      "answer": "We currently only quantify the carbon savings from the use of recycled aluminum, titanium, stainless steel, lithium, cobalt, tungsten, and gold in select parts for select products. [E1] Endnote 8: We calculate emissions savings from the use of recycled or low-carbon materials in our products by comparing the carbon intensity of key materials today with their 2015 baseline for Apple products or using industry average data. [E1]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-8",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E3",
+          "chunk-17",
+          [
+            11
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E6",
+          "chunk-15",
+          [
+            11
+          ]
+        ],
+        [
+          "E7",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E8",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F07",
+      "category": "footnote",
+      "question": "What EPEAT rating did iMac achieve, and in which countries?",
+      "expected_answer": "A Gold rating in the United States and Canada (endnote 6).",
+      "status": "answered",
+      "answer": "Endnote 6: iMac achieved a Gold rating in the United States and Canada, in accordance with IEEE 1680.1 or UL 110, and is listed as such on the Electronic Product Environmental Assessment Tool (EPEAT) Registry. [E1] EPEAT registers computers, displays, and mobile phones based on environmental requirements in these standards. [E1]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-6",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "fn-16",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E4",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E5",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E6",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E7",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E9",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "F08",
+      "category": "footnote",
+      "question": "Which iMac configuration is the 346 kg CO2e carbon footprint based on?",
+      "expected_answer": "The carbon footprint table (p12) and p2 attribute 346 kg CO2e to iMac (two ports) with 256GB. Note: endnote 10, attached to the chart's 346 kg 'iMac emissions', says the LCA is based on iMac (two ports) with 512GB, so the report is internally inconsistent.",
+      "status": "answered",
+      "answer": "Endnote 10: Greenhouse gas emissions were calculated using a life cycle assessment methodology in accordance with ISO 14040, 14044, and 14067 standards and based on iMac (two ports) with 512GB storage configuration. [E2] Endnote 7: Carbon reductions are calculated against a product-specific business-as-usual scenario as modeled by Apple: 1) No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid (based on regional emissions factors). 2) Apple’s carbon intensity of key materials as of 2015 (our baseline year for our 2030 product carbon neutrality goal). [E7]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.5,
+        "missing_facts": [
+          [
+            "256"
+          ]
+        ],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E2",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E3",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E4",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E5",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E6",
+          "chunk-15",
+          [
+            11
+          ]
+        ],
+        [
+          "E7",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E9",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E10",
+          "table-3",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "M01",
+      "category": "multi_page",
+      "question": "By how much has Apple reduced iMac emissions, and what business-as-usual scenario are the reductions measured against?",
+      "expected_answer": "More than 20 percent (p2, p12) against a product-specific business-as-usual scenario modelled by Apple: no clean electricity beyond the grid, Apple's 2015 carbon intensity of key materials, and its average transport mode mix for fiscal years 2017-2019 (endnote 7).",
+      "status": "answered",
+      "answer": "Endnote 7: Carbon reductions are calculated against a product-specific business-as-usual scenario as modeled by Apple: 1) No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid (based on regional emissions factors). 2) Apple’s carbon intensity of key materials as of 2015 (our baseline year for our 2030 product carbon neutrality goal). [E1] We’ve reduced emissions for iMac (two ports) with 256GB by more than 20 percent against our business-as-usual scenario as modeled by Apple.[^7] [E1]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.667,
+        "missing_facts": [
+          [
+            "2017"
+          ]
+        ],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.5
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E3",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E4",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E5",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E6",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E7",
+          "fn-8",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "fn-9",
+          [
+            13
+          ]
+        ],
+        [
+          "E10",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E11",
+          "fn-11",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "M02",
+      "category": "multi_page",
+      "question": "Which materials in iMac use 100 percent recycled content, and is any of these claims limited to a particular configuration?",
+      "expected_answer": "Aluminum (stand), copper (multiple PCBs and thermal module components), gold (PCB plating), rare earth elements (all magnets) and tin (PCB solder); the recycled copper in the thermal module applies to iMac (four ports) only (endnote 14).",
+      "status": "answered",
+      "answer": "We use 100 percent recycled tin in the solder of multiple printed circuit boards. [E2] iMac contains 76 percent recycled content, and we have protected or established enough responsibly managed forests to cover all the new wood fiber we use in our packaging.[^4] [E3]",
+      "cited_pages": [
+        5,
+        6,
+        7
+      ],
+      "content_types_used": [
+        "text"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.167,
+        "missing_facts": [
+          [
+            "aluminum"
+          ],
+          [
+            "copper"
+          ],
+          [
+            "gold"
+          ],
+          [
+            "rare earth"
+          ],
+          [
+            "four ports",
+            "four-port",
+            "4 ports",
+            "4-port"
+          ]
+        ],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.5,
+        "citation_recall": 0.5
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.04,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-5",
+          [
+            5
+          ]
+        ],
+        [
+          "E2",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E3",
+          "chunk-10",
+          [
+            7
+          ]
+        ],
+        [
+          "E4",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E5",
+          "fn-13",
+          [
+            14
+          ]
+        ],
+        [
+          "E6",
+          "chunk-6",
+          [
+            5
+          ]
+        ],
+        [
+          "E7",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-14",
+          [
+            14
+          ]
+        ],
+        [
+          "E9",
+          "fn-16",
+          [
+            14
+          ]
+        ],
+        [
+          "E10",
+          "fn-12",
+          [
+            13,
+            14
+          ]
+        ],
+        [
+          "E11",
+          "fn-4",
+          [
+            13
+          ]
+        ],
+        [
+          "E12",
+          "fn-1",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "M03",
+      "category": "multi_page",
+      "question": "How does the recycled content of iMac's packaging compare with the recycled content of the device itself?",
+      "expected_answer": "The fiber packaging contains 76 percent recycled content (p7, p8), while the device contains more than 15 percent recycled content (p1, p2, p5), a figure that excludes packaging (endnote 1).",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: Endnote 1: Product recycled or renewable content is the mass of certified recycled material relative to the overall mass of the device, not including packaging or in-box accessories. [E1] iMac contains 76 percent recycled content, and we have protected or established enough responsibly managed forests to cover all the new wood fiber we use in our packaging.[^4] [E3]",
+      "cited_pages": [
+        7,
+        13
+      ],
+      "content_types_used": [
+        "footnote",
+        "text"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.5,
+        "missing_facts": [
+          15
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 0.5
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.5
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-1",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "chunk-2",
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "E3",
+          "chunk-10",
+          [
+            7
+          ]
+        ],
+        [
+          "E4",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "chunk-5",
+          [
+            5
+          ]
+        ],
+        [
+          "E6",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E7",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E8",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "fn-3",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "fn-4",
+          [
+            13
+          ]
+        ],
+        [
+          "E12",
+          "table-1",
+          [
+            12
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "M04",
+      "category": "multi_page",
+      "question": "iMac uses 58 percent less energy than the ENERGY STAR requirement. What is that figure based on, and which power adapter was iMac tested with?",
+      "expected_answer": "It is based on the ENERGY STAR Program Requirements for Computers, including the maximum energy allowance for iMac; iMac was tested with the 143W Power Adapter, AC Cable (1m) and DC Cable (2m) (endnote 18).",
+      "status": "answered",
+      "answer": "iMac uses 58 percent less energy than the requirement for ENERGY STAR.[^18] [E1] Endnote 18: Energy consumption and energy efficiency values are based on the ENERGY STAR Program Requirements for Computers, including the max energy allowance for iMac. [E1]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.5,
+        "missing_facts": [
+          143
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.5
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.02,
+      "retrieved": [
+        [
+          "E1",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E3",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E4",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E5",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E6",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "M05",
+      "category": "multi_page",
+      "question": "What share of iMac manufacturing electricity comes from low-carbon sources, and how is that percentage estimated?",
+      "expected_answer": "Over 20 percent (p1, p6). Apple attributes to its carbon model the low-carbon energy suppliers procured in the prior fiscal year, based on supplier manufacturing allocations at launch, assessing the suppliers for iMac (two ports) 256GB and counting only electricity procured through the Supplier Clean Energy Program (endnote 2).",
+      "status": "answered",
+      "answer": "Endnote 2: We estimate the percentage of electricity-related emissions in our manufacturing that is sourced from low-carbon electricity by attributing to our carbon model low-carbon energy procured by our suppliers in the prior fiscal year, based on the supplier manufacturing allocations at time of product launch. [E1] Endnote 9: We estimate the percentage of electricity-related emissions in our manufacturing that is sourced from clean electricity by attributing to our carbon model clean energy procured by our suppliers in the prior fiscal year, based on the supplier manufacturing allocations at time of product launch. [E2]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.5,
+        "missing_facts": [
+          20
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 0.5
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "fn-9",
+          [
+            13
+          ]
+        ],
+        [
+          "E3",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "chunk-17",
+          [
+            11
+          ]
+        ],
+        [
+          "E6",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E8",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E9",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E10",
+          "fn-16",
+          [
+            14
+          ]
+        ],
+        [
+          "E11",
+          "fn-15",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "N01",
+      "category": "calculation",
+      "question": "How much higher is the carbon footprint of iMac (four ports) 512GB than that of iMac (two ports) 256GB?",
+      "expected_answer": "391 - 346 = 45 kg CO2e higher.",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: iMac (four ports) 512GB: 391 kg CO2e [E1] Endnote 10: Greenhouse gas emissions were calculated using a life cycle assessment methodology in accordance with ISO 14040, 14044, and 14067 standards and based on iMac (two ports) with 512GB storage configuration. [E3]",
+      "cited_pages": [
+        12,
+        13
+      ],
+      "content_types_used": [
+        "footnote",
+        "table"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          45
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.5,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E2",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E8",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E9",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "N02",
+      "category": "calculation",
+      "question": "By what percentage do emissions fall from the baseline to the final iMac emissions shown in the carbon neutral progress chart?",
+      "expected_answer": "(445 - 346) / 445 = about 22.2 percent, consistent with the 'more than 20 percent' claim.",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: Endnote 7: Carbon reductions are calculated against a product-specific business-as-usual scenario as modeled by Apple: 1) No use of clean electricity for manufacturing or product use, beyond what is already available on the latest modeled grid (based on regional emissions factors). 2) Apple’s carbon intensity of key materials as of 2015 (our baseline year for our 2030 product carbon neutrality goal). [E3] Carbon intensity of materials reflects use of recycled content and production technology. 3) Apple’s average mix of transportation modes (air, rail, ocean, ground) by product line across three years (fiscal years 2017 to 2019) to best capture the baseline transportation emissions of our products. [E3]",
+      "cited_pages": [
+        13
+      ],
+      "content_types_used": [
+        "footnote"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          22.2
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.0,
+        "citation_recall": 0.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.02,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E2",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E3",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "fn-9",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E8",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E9",
+          "fn-8",
+          [
+            13
+          ]
+        ],
+        [
+          "E10",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E11",
+          "fn-11",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "N03",
+      "category": "calculation",
+      "question": "At 230V, how much more power does iMac draw in sleep mode than when it is off?",
+      "expected_answer": "0.59W - 0.29W = 0.30W.",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: Off — 230V: 0.29W [E1] Environmental Protection Agency. iMac is tested with the 143W Power Adapter, AC Cable (1m), and DC Cable (2m). • Off: Lowest power mode of the system. [E2]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "footnote",
+        "table"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          0.3
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "chunk-12",
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          "E6",
+          "chunk-16",
+          [
+            11
+          ]
+        ],
+        [
+          "E7",
+          "fn-7",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "N04",
+      "category": "calculation",
+      "question": "Approximately how many kg CO2e of the life cycle emissions of iMac (two ports) 256GB are attributable to production?",
+      "expected_answer": "About 173 kg CO2e (50% of 346 kg CO2e; percentages are rounded).",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: Production: 50% [E2] iMac (four ports) 512GB: 391 kg CO2e [E3] Endnote 10: Greenhouse gas emissions were calculated using a life cycle assessment methodology in accordance with ISO 14040, 14044, and 14067 standards and based on iMac (two ports) with 512GB storage configuration. [E1]",
+      "cited_pages": [
+        12,
+        13
+      ],
+      "content_types_used": [
+        "footnote",
+        "table"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": 0.0,
+        "missing_facts": [
+          173
+        ],
+        "numeric_ok": false,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 0.5,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 0.667,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E2",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E4",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E5",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E8",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E9",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "N05",
+      "category": "calculation",
+      "question": "What is the range of iMac's idle (display on) power consumption across the tested voltages?",
+      "expected_answer": "From 20.5W at 100V to 20.9W at 230V (20.6W at 115V).",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: Idle—Display On — 100V: 20.5W, 115V: 20.6W, 230V: 20.9W [E1] Environmental Protection Agency. iMac is tested with the 143W Power Adapter, AC Cable (1m), and DC Cable (2m). • Off: Lowest power mode of the system. [E2]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "footnote",
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E5",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E8",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "N06",
+      "category": "calculation",
+      "question": "What is the power adapter's no-load power consumption at 100V, expressed in milliwatts?",
+      "expected_answer": "0.10W = 100 mW.",
+      "status": "answered",
+      "answer": "Local mode does not calculate. Relevant values from the report: Power adapter, no load — 100V: 0.10W [E1] Connected to Wi-Fi. • Power adapter, no-load: Condition in which the 143W Power Adapter with the AC Cable (1m) and DC Cable (2m) is connected to AC power, but not connected to the system. • Power adapter efficiency: Average of the 143W Power Adapter with the AC Cable (1m) and DC Cable (2m) measured efficiency when tested at 100 percent, 75 percent, 50 percent, and 25 percent of the power adapter’s rated output current, but not connected to the system. [E2]",
+      "cited_pages": [
+        14
+      ],
+      "content_types_used": [
+        "footnote",
+        "table"
+      ],
+      "score": {
+        "correct": true,
+        "fact_score": 1.0,
+        "missing_facts": [],
+        "numeric_ok": true,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": 1.0,
+        "phrase_recall": 1.0,
+        "missing_phrases": [],
+        "hit_at_k": true,
+        "mrr": 1.0,
+        "type_coverage": 1.0
+      },
+      "citations": {
+        "citation_precision": 1.0,
+        "citation_recall": 1.0
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E5",
+          "chunk-16",
+          [
+            11
+          ]
+        ],
+        [
+          "E6",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E8",
+          "chunk-1",
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U01",
+      "category": "unanswerable",
+      "question": "What is the price of the iMac?",
+      "expected_answer": "Not in the report.",
+      "status": "insufficient_evidence",
+      "answer": "The report does not appear to contain enough information to answer this. These terms do not occur anywhere in the report: price.",
+      "cited_pages": [],
+      "content_types_used": [],
+      "score": {
+        "correct": true,
+        "fact_score": null,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "citations": {
+        "citation_precision": null,
+        "citation_recall": null
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E3",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E4",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E11",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E12",
+          "chunk-9",
+          [
+            6
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U02",
+      "category": "unanswerable",
+      "question": "How much does the iMac weigh?",
+      "expected_answer": "Not in the report.",
+      "status": "insufficient_evidence",
+      "answer": "The report does not appear to contain enough information to answer this. These terms do not occur anywhere in the report: weigh.",
+      "cited_pages": [],
+      "content_types_used": [],
+      "score": {
+        "correct": true,
+        "fact_score": null,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "citations": {
+        "citation_precision": null,
+        "citation_recall": null
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E5",
+          "chunk-12",
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          "E6",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E7",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "E8",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E9",
+          "fn-5",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U03",
+      "category": "unanswerable",
+      "question": "What was the carbon footprint of the 2023 iMac with the M3 chip?",
+      "expected_answer": "Not in the report (it covers the iMac introduced October 28, 2024).",
+      "status": "insufficient_evidence",
+      "answer": "The report does not appear to contain enough information to answer this. These terms do not occur anywhere in the report: 2023, chip.",
+      "cited_pages": [],
+      "content_types_used": [],
+      "score": {
+        "correct": true,
+        "fact_score": null,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "citations": {
+        "citation_precision": null,
+        "citation_recall": null
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E2",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E4",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E5",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E6",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E7",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E8",
+          "table-3",
+          [
+            14
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U04",
+      "category": "unanswerable",
+      "question": "What is iMac's typical annual energy consumption in kWh?",
+      "expected_answer": "Not in the report (only mode power in watts and the 58% ENERGY STAR comparison).",
+      "status": "insufficient_evidence",
+      "answer": "The report does not appear to contain enough information to answer this. These terms do not occur anywhere in the report: annual, kwh.",
+      "cited_pages": [],
+      "content_types_used": [],
+      "score": {
+        "correct": true,
+        "fact_score": null,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "citations": {
+        "citation_precision": null,
+        "citation_recall": null
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "figure-3",
+          [
+            9
+          ]
+        ],
+        [
+          "E5",
+          "fn-2",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E7",
+          "chunk-9",
+          [
+            6
+          ]
+        ],
+        [
+          "E8",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E9",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E10",
+          "table-1",
+          [
+            12
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U05",
+      "category": "unanswerable",
+      "question": "How much water is used to manufacture an iMac?",
+      "expected_answer": "Not in the report.",
+      "status": "answered",
+      "answer": "Endnote 5: Apple’s Regulated Substances Specification describes Apple’s restrictions on the use of certain chemical substances in materials in Apple products, accessories, manufacturing processes, and packaging used for shipping products to Apple’s end customers. [E8] In our carbon footprint calculations, we also account for the emissions necessary to generate low-carbon electricity, specifically to manufacture and maintain renewable energy infrastructure, like wind and solar farms. [E2]",
+      "cited_pages": [
+        2,
+        13
+      ],
+      "content_types_used": [
+        "footnote",
+        "text"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": null,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": true,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "citations": {
+        "citation_precision": null,
+        "citation_recall": null
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E2",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E3",
+          "fn-4",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-10",
+          [
+            7
+          ]
+        ],
+        [
+          "E5",
+          "chunk-5",
+          [
+            5
+          ]
+        ],
+        [
+          "E6",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E7",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E8",
+          "fn-5",
+          [
+            13
+          ]
+        ],
+        [
+          "E9",
+          "chunk-1",
+          [
+            1
+          ]
+        ],
+        [
+          "E10",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E11",
+          "fn-3",
+          [
+            13
+          ]
+        ],
+        [
+          "E12",
+          "fn-1",
+          [
+            13
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U06",
+      "category": "unanswerable",
+      "question": "What is the carbon footprint of iMac (four ports) with 1TB of storage?",
+      "expected_answer": "Not in the report (only two ports 256GB and four ports 512GB are given).",
+      "status": "answered",
+      "answer": "iMac (four ports) 512GB: 391 kg CO2e [E1]",
+      "cited_pages": [
+        12
+      ],
+      "content_types_used": [
+        "table"
+      ],
+      "score": {
+        "correct": false,
+        "fact_score": null,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": true,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "citations": {
+        "citation_precision": null,
+        "citation_recall": null
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E2",
+          "table-1",
+          [
+            12
+          ]
+        ],
+        [
+          "E3",
+          "fn-10",
+          [
+            13
+          ]
+        ],
+        [
+          "E4",
+          "chunk-19",
+          [
+            12
+          ]
+        ],
+        [
+          "E5",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E6",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E7",
+          "figure-1",
+          [
+            2,
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "U07",
+      "category": "unanswerable",
+      "question": "What display resolution does the iMac have?",
+      "expected_answer": "Not in the report.",
+      "status": "insufficient_evidence",
+      "answer": "The report does not appear to contain enough information to answer this. These terms do not occur anywhere in the report: resolution.",
+      "cited_pages": [],
+      "content_types_used": [],
+      "score": {
+        "correct": true,
+        "fact_score": null,
+        "missing_facts": [],
+        "numeric_ok": null,
+        "answered_unanswerable": false,
+        "wrong_abstention": false
+      },
+      "retrieval": {
+        "evidence_recall": null,
+        "phrase_recall": null,
+        "hit_at_k": null,
+        "mrr": null,
+        "type_coverage": null
+      },
+      "citations": {
+        "citation_precision": null,
+        "citation_recall": null
+      },
+      "unsupported_numbers": [],
+      "failed_calculations": 0,
+      "warnings": [],
+      "seconds": 0.01,
+      "retrieved": [
+        [
+          "E1",
+          "table-3",
+          [
+            14
+          ]
+        ],
+        [
+          "E2",
+          "fn-18",
+          [
+            14
+          ]
+        ],
+        [
+          "E3",
+          "chunk-11",
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          "E4",
+          "table-2",
+          [
+            12
+          ]
+        ],
+        [
+          "E5",
+          "chunk-7",
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          "E6",
+          "chunk-3",
+          [
+            2
+          ]
+        ],
+        [
+          "E7",
+          "fn-7",
+          [
+            13
+          ]
+        ],
+        [
+          "E8",
+          "fn-5",
+          [
+            13
+          ]
+        ]
+      ]
+    }
+  ]
+}

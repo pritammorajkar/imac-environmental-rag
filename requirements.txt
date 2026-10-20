@@ -1,0 +1,11 @@
+# Tested on macOS (Intel x86_64), Python 3.12.14, with exactly these versions.
+pymupdf>=1.26,<2        # 2.0 sdist fails to install on macOS x86_64; 1.28.2 tested
+chromadb==1.5.9
+fastembed==0.9.0        # local ONNX embeddings (no torch needed)
+onnxruntime==1.23.2
+numpy==2.5.4
+rank-bm25==0.2.2
+openai==3.35.1          # only used when LLM_PROVIDER=gemini|openai
+python-dotenv==1.2.4
+streamlit==1.66.0
+pytest==9.1.1
